@@ -101,7 +101,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
+	  HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin); //Toggle the state of pin
+	  HAL_Delay(500); //задержка в мс
   }
   /* USER CODE END 3 */
 
@@ -170,6 +171,7 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_RESET);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>/home/dvzverrr/STM32/HabrTutorial/\HabrTutorial</ProjectName>
+<ProjectName>/home/dvzverrr/STM32/STM32_Example/\HabrTutorial</ProjectName>
 <CMSIS>../Drivers/CMSIS</CMSIS>
 <HAL_Driver>/home/dvzverrr/STM32Cube/Repository//STM32Cube_FW_F1_V1.6.0/Drivers/CMSIS</HAL_Driver>
 
@@ -30,9 +30,9 @@
     	<board>custom</board>
 			
     <usedDebug>true</usedDebug>
-    	<debugprobe></debugprobe>
+    	<debugprobe>swd</debugprobe>
     <optimization>6</optimization>
-    <icfloc>1</icfloc>
+    <icfloc>0</icfloc>
     <Adefines>
         <define></define>
     </Adefines>   

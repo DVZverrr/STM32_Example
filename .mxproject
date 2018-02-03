@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=/home/dvzverrr/STM32/HabrTutorial/Inc
+HeaderPath=/home/dvzverrr/STM32/STM32_Example/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=/home/dvzverrr/STM32/HabrTutorial/Src
+SourcePath=/home/dvzverrr/STM32/STM32_Example/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
