@@ -77,7 +77,9 @@ static void MX_TIM2_Init(void);
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM2) //check if the interrupt comes from TIM1
 	{
-		HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin); //Toggle the state of pin
+		//HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin); //Toggle the state of pin
+		char data[] = "Hello, Blue pill!/r/n";
+		CDC_Transmit_FS(data, strlen(data));
 	}
 }
 
